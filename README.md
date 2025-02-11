@@ -1,6 +1,6 @@
 # NetworkPrototype
  A network prototype project made for evaluation
- 
+
 # How to play
 When you run the project, it will authomatically run a shared server room, connect to the server and spawn a player.
 If you run multiple instances, a new instance will connect to the created room if available.
@@ -13,14 +13,14 @@ While the ball is in BallStateActive, the ball will not be interactive.
 To interact with the ball, click the 3D button to change the state to BallStateIdle.
 
 # Project Structure
-* Environment
+## Environment
 The models and materials are created by the developer using Unity's basic 3D objects or Blender.
 
-* Network Solution
+## Network Solution
 Photon Fusion 2 Shared Mode is used for this project.
 Shared room is created authomatically when the project is run.
 
-* Interactivity
+## Interactivity
 First person camera and input is used to move and rotate. 
 WASD keyboard, mouse movement and MouseButton(0) are used to interact with the world.
 With the MouseButton(0), raycast is used to interact with Grabbable Object (Ball) and Switch Button (3D Button).
@@ -33,7 +33,7 @@ Triggering the 3D button will change the BallState.
 While in idle (BallIdleState), the ball is interactable, at the default position.
 While in active (BallActiveState), the ball is not interactable and follows an invisible transform that moves around. For follow movement, TweenTrack and TweenClip are used in a Timeline.
 
-* UI Integration
+## UI Integration
 
 All texts use TMP_Pro and under a canvas with Fusion Basic Billboard component.
 
